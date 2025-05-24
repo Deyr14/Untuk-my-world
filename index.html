@@ -76,19 +76,19 @@
 </head>
 <body>
   <audio controls autoplay>
-  <source src="lesungpipi.mp3" type="audio/mp3">
-  Browser kamu tidak mendukung elemen audio.
-</audio>  
+    <source src="lesungpipi.mp3" type="audio/mp3">
+    Browser kamu tidak mendukung elemen audio.
+  </audio>
 
   <h1>Hai, Duniaku 💕</h1>
   <p>Aku punya sesuatu spesial buat kamu...</p>
   <div class="heart">❤️</div>
   <button id="loveBtn" onclick="tampilkanPesan()">Klik untuk lihat pesannya</button>
-  <div id="message">
-  Aku cinta kamu hari ini, besok, dan selamanya 💖
-  <p id="extraMessage" style="display: none;">Dan aku akan selalu ada untuk kamu, tapi jangan suka marah marah ya 😘</p>
-</div>
 
+  <div id="message">
+    <p>Aku cinta kamu hari ini, besok, dan selamanya 💖</p>
+    <p>Dan aku akan selalu ada untuk kamu, tapi jangan suka marah-marah ya 😘</p>
+  </div>
 
   <!-- Efek cinta jatuh -->
   <script>
@@ -96,7 +96,6 @@
       document.getElementById("message").style.display = "block";
     }
 
-    // Bikin love jatuh
     setInterval(() => {
       const heart = document.createElement("div");
       heart.classList.add("falling-heart");
@@ -110,6 +109,5 @@
       }, 5000);
     }, 300);
   </script>
-  
 </body>
 </html>
