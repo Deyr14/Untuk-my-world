@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Untuk Kamu 💖</title>
+  <style>
+    body {
+      background: #ffe6eb;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      color: #e60073;
+      font-size: 3em;
+      margin-bottom: 0;
+    }
+
+    p {
+      color: #99004d;
+      font-size: 1.5em;
+    }
+
+    #loveBtn {
+      padding: 10px 25px;
+      font-size: 1.2em;
+      background-color: #ff3399;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .heart {
+      color: red;
+      font-size: 3em;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    #message {
+      margin-top: 30px;
+      font-size: 1.5em;
+      color: #cc0066;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hai, Cinta 💕</h1>
+  <p>Aku punya sesuatu spesial buat kamu...</p>
+  <div class="heart">❤️</div>
+  <button id="loveBtn" onclick="tampilkanPesan()">Klik untuk lihat pesannya</button>
+  <div id="message">Aku cinta kamu hari ini, besok, dan selamanya 💖</div>
+
+  <script>
+    function tampilkanPesan() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+</body>
+</html>
